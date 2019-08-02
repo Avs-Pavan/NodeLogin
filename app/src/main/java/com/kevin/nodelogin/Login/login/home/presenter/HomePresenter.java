@@ -4,8 +4,8 @@ import android.content.Context;
 
 import com.kevin.nodelogin.Login.login.di.Retrofit.ApiInterface;
 import com.kevin.nodelogin.Login.login.home.view.Home;
-import com.kevin.nodelogin.Login.login.login.model.pojo.BasicResponce;
-import com.kevin.nodelogin.Login.login.login.model.pojo.UserListResponce;
+import com.kevin.nodelogin.Login.login.login.model.BasicResponce;
+import com.kevin.nodelogin.Login.login.home.model.UserListResponce;
 
 import javax.inject.Inject;
 

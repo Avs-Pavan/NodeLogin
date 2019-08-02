@@ -3,8 +3,8 @@ package com.kevin.nodelogin.Login.login.login.presenter;
 import android.content.Context;
 
 import com.kevin.nodelogin.Login.login.di.Retrofit.ApiInterface;
-import com.kevin.nodelogin.Login.login.login.model.pojo.LoginPojo;
-import com.kevin.nodelogin.Login.login.login.model.pojo.Responce;
+import com.kevin.nodelogin.Login.login.login.model.LoginPojo;
+import com.kevin.nodelogin.Login.login.login.model.Responce;
 import com.kevin.nodelogin.Login.login.login.view.LoginActivity;
 
 import javax.inject.Inject;

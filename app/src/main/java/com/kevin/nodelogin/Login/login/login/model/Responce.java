@@ -1,4 +1,4 @@
-package com.kevin.nodelogin.Login.login.login.model.pojo;
+package com.kevin.nodelogin.Login.login.login.model;
 
 import com.google.gson.annotations.SerializedName;
 

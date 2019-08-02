@@ -1,6 +1,6 @@
 package com.kevin.nodelogin.Login.login.home.presenter;
 
-import com.kevin.nodelogin.Login.login.login.model.pojo.User;
+import com.kevin.nodelogin.Login.login.home.model.User;
 
 import java.util.List;
 

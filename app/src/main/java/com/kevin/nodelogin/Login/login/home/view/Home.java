@@ -18,7 +18,7 @@ import com.kevin.nodelogin.Login.login.di.module.HomeContextmodule;
 import com.kevin.nodelogin.Login.login.di.module.HomeMvpModule;
 import com.kevin.nodelogin.Login.login.home.presenter.HomeContract;
 import com.kevin.nodelogin.Login.login.home.presenter.HomePresenter;
-import com.kevin.nodelogin.Login.login.login.model.pojo.User;
+import com.kevin.nodelogin.Login.login.home.model.User;
 import com.kevin.nodelogin.R;
 
 import java.util.List;
@@ -77,6 +77,7 @@ public class Home extends AppCompatActivity implements HomeContract.View, HomeCo
     @Override
     public void onSuccess(String message) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+        presenter.fetchList();
     }
 
     @Override
@@ -87,7 +88,5 @@ public class Home extends AppCompatActivity implements HomeContract.View, HomeCo
     @Override
     public void onDelete(String id) {
         presenter.delete(id);
-        presenter.fetchList();
-        //Toast.makeText(this, "delete : " + id, Toast.LENGTH_SHORT).show();
     }
 }

@@ -1,7 +1,6 @@
 package com.kevin.nodelogin.Login.login.di.module;
 
 
-
 import com.kevin.nodelogin.Login.login.di.Retrofit.ApiInterface;
 
 import javax.inject.Singleton;
@@ -20,6 +19,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class NetworkModule {
 
 
+    private static final String BASE_URL = "http://192.168.59.4:3000/";
 
     @Provides
     ApiInterface getApiInterface(Retrofit retroFit) {
@@ -29,7 +29,7 @@ public class NetworkModule {
     @Provides
     Retrofit getRetrofit(OkHttpClient okHttpClient) {
         return new Retrofit.Builder()
-                .baseUrl("http://192.168.59.4:3000/")
+                .baseUrl(BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
                 .client(okHttpClient)

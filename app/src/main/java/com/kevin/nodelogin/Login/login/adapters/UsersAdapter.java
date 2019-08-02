@@ -8,7 +8,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import com.kevin.nodelogin.Login.login.home.presenter.HomeContract;
-import com.kevin.nodelogin.Login.login.login.model.pojo.User;
+import com.kevin.nodelogin.Login.login.home.model.User;
 import com.kevin.nodelogin.R;
 import java.util.List;
 import butterknife.ButterKnife;
